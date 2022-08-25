@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "og_enchants",
+  "version": "${version}",
+
+  "name": "Extra Enchants",
+  "description": "Just a test of some custom enchants that are great",
+  "authors": [
+    "Thrillz"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.enchants.og_enchants.og_enchants"
+    ]
+  },
+  "mixins": [
+    "og_enchants.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
